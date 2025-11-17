@@ -1,77 +1,45 @@
 import React from 'react';
+import manjunathPhoto from '../assets/Team members photos /Manjunath Subhedar.png';
+import saanjaliPhoto from '../assets/Team members photos /Saanjali belgavi.png';
+import rohitPhoto from '../assets/Team members photos /Rohit .png';
 
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Rajesh Subhedar',
-      role: 'CEO & Founder',
-      description: 'Visionary leader with 15+ years in technology and business innovation.',
-      avatar: '👨‍💼',
-      expertise: ['Strategy', 'Leadership', 'Innovation'],
+      name: 'Manjunath Subhedar',
+      role: 'Founder',
+      description: 'Mathematics lecturer with 15+ years of experience in teaching pre-graduate students. Visionary leader driving educational excellence and innovation.',
+      photo: manjunathPhoto,
+      expertise: ['Mathematics', 'Education', 'Leadership'],
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'rajesh@subhedardigital.com'
+        email: 'saanjalibelgavi@gmail.com'
       }
     },
     {
-      name: 'Priya Sharma',
-      role: 'CTO',
-      description: 'Tech architect specializing in scalable systems and cloud infrastructure.',
-      avatar: '👩‍💻',
-      expertise: ['Cloud', 'Architecture', 'DevOps'],
+      name: 'Saanjali Belgavi',
+      role: 'Lead Full Stack Developer',
+      description: 'Experienced and certified full stack developer specializing in building scalable web applications and modern digital solutions.',
+      photo: saanjaliPhoto,
+      expertise: ['Full-Stack', 'React', 'Node.js', 'Cloud'],
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'priya@subhedardigital.com'
-      }
+        email: 'saanjalibelgavi@gmail.com'
+      },
+      portfolio: 'https://saanjalibelgavi.web.app/'
     },
     {
-      name: 'Amit Patel',
-      role: 'Head of AI/ML',
-      description: 'AI expert driving innovation in machine learning and data science.',
-      avatar: '👨‍🔬',
-      expertise: ['AI/ML', 'Data Science', 'Analytics'],
+      name: 'Rohit Shivsharan Subhedar',
+      role: 'AI/ML Developer',
+      description: 'AI and Machine Learning specialist developing intelligent solutions using cutting-edge technologies and modern ML frameworks.',
+      photo: rohitPhoto,
+      expertise: ['AI/ML', 'Python', 'Deep Learning', 'Data Science'],
       social: {
         linkedin: '#',
         twitter: '#',
-        email: 'amit@subhedardigital.com'
-      }
-    },
-    {
-      name: 'Sarah Johnson',
-      role: 'Lead Designer',
-      description: 'Creative designer crafting exceptional user experiences and interfaces.',
-      avatar: '👩‍🎨',
-      expertise: ['UI/UX', 'Branding', 'Product Design'],
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'sarah@subhedardigital.com'
-      }
-    },
-    {
-      name: 'Vikram Singh',
-      role: 'Senior Developer',
-      description: 'Full-stack developer building robust and efficient applications.',
-      avatar: '👨‍💻',
-      expertise: ['Full-Stack', 'React', 'Node.js'],
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'vikram@subhedardigital.com'
-      }
-    },
-    {
-      name: 'Emily Chen',
-      role: 'Project Manager',
-      description: 'Agile expert ensuring seamless project delivery and client satisfaction.',
-      avatar: '👩‍💼',
-      expertise: ['Agile', 'Scrum', 'Delivery'],
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        email: 'emily@subhedardigital.com'
+        email: 'saanjalibelgavi@gmail.com'
       }
     }
   ];
@@ -107,8 +75,12 @@ const Team = () => {
             >
               {/* Avatar */}
               <div className="flex justify-center mb-6">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#00D4FF] to-[#6A5DFF] flex items-center justify-center text-6xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg animate-glow">
-                  {member.avatar}
+                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#00D4FF] to-[#6A5DFF] p-1 group-hover:scale-110 transition-all duration-500 shadow-lg animate-glow">
+                  <img 
+                    src={member.photo} 
+                    alt={member.name}
+                    className="w-full h-full rounded-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -139,6 +111,19 @@ const Team = () => {
 
               {/* Social Links */}
               <div className="flex justify-center gap-4 pt-4 border-t border-[#EAF2FF]">
+                {member.portfolio && (
+                  <a
+                    href={member.portfolio}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-[#F5FAFF] rounded-lg flex items-center justify-center text-[#00D4FF] hover:bg-gradient-to-r hover:from-[#00D4FF] hover:to-[#6A5DFF] hover:text-white transition-all duration-300"
+                    aria-label="Portfolio"
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </a>
+                )}
                 <a
                   href={member.social.linkedin}
                   className="w-10 h-10 bg-[#F5FAFF] rounded-lg flex items-center justify-center text-[#00D4FF] hover:bg-gradient-to-r hover:from-[#00D4FF] hover:to-[#6A5DFF] hover:text-white transition-all duration-300"
