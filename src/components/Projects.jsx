@@ -5,15 +5,15 @@ import contentMod1 from '../assets/Project screenshots/AI powered content modera
 import contentMod2 from '../assets/Project screenshots/AI powered content moderation/AI powered content moderation 2.png';
 import contentMod3 from '../assets/Project screenshots/AI powered content moderation/AI powered content moderation 3.jpeg';
 import voiceCompanion from '../assets/Project screenshots/AI powered Voice companion/AI powered voice companion 1.png';
-import textToImage from '../assets/Project screenshots/AI powered text to image /visinory Forge AI.png';
+import textToImage from '../assets/Project screenshots/AI powered text to image/visinory Forge AI.png';
 import ecommerce1 from '../assets/Project screenshots/Ecommerce/Loom&key screenshot 1.png';
 import ecommerce2 from '../assets/Project screenshots/Ecommerce/Loom&key screenshot 2.png';
 import ecommerce3 from '../assets/Project screenshots/Ecommerce/Loom&key screenshot 3.png';
 import hospital1 from '../assets/Project screenshots/Hospital portal/doctor_patient portal screenshot 1.png';
 import hospital3 from '../assets/Project screenshots/Hospital portal/doctor patient portal scrrenshot 3.png';
 import hospital4 from '../assets/Project screenshots/Hospital portal/doctor patient portal scrrenshot  4.png';
-import landing1 from '../assets/Project screenshots/Landing page /calloc screentshot 1 .png';
-import landing2 from '../assets/Project screenshots/Landing page /calloc screentshot 2.png';
+import landing1 from '../assets/Project screenshots/Landing page/calloc screentshot 1 .png';
+import landing2 from '../assets/Project screenshots/Landing page/calloc screentshot 2.png';
 import pulse1 from '../assets/Project screenshots/Pulse CMR/pulse CMR  screenshot 1.png';
 import pulse2 from '../assets/Project screenshots/Pulse CMR/pulse CMR  screenshot 2.png';
 
