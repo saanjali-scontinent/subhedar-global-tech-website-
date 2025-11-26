@@ -1,8 +1,8 @@
 import React from 'react';
-import manjunathPhoto from '../assets/Team members photos /Manjunath Subhedar.png';
-import saanjaliPhoto from '../assets/Team members photos /Saanjali belgavi.png';
-import kartikPhoto from '../assets/Team members photos /Kartik Personal.png';
-import rohitPhoto from '../assets/Team members photos /Rohit .png';
+import manjunathPhoto from '../assets/Team members photos/Manjunath Subhedar.png';
+import saanjaliPhoto from '../assets/Team members photos/Saanjali belgavi.png';
+import kartikPhoto from '../assets/Team members photos/Kartik Personal.png';
+import rohitPhoto from '../assets/Team members photos/Rohit .png';
 
 const Team = () => {
   const teamMembers = [
