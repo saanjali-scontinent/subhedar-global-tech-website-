@@ -1,6 +1,7 @@
 import React from 'react';
 import manjunathPhoto from '../assets/Team members photos /Manjunath Subhedar.png';
 import saanjaliPhoto from '../assets/Team members photos /Saanjali belgavi.png';
+import kartikPhoto from '../assets/Team members photos /Kartik Personal.png';
 import rohitPhoto from '../assets/Team members photos /Rohit .png';
 
 const Team = () => {
@@ -29,6 +30,19 @@ const Team = () => {
         email: 'saanjalibelgavi@gmail.com'
       },
       portfolio: 'https://saanjalibelgavi.web.app/'
+    },
+    {
+      name: 'Kartik Patil',
+      role: 'Lead AI/ML Developer',
+      description: 'Lead AI/ML developer with 2 years of experience in developing cutting-edge artificial intelligence and machine learning solutions.',
+      photo: kartikPhoto,
+      expertise: ['AI/ML', 'Python', 'Deep Learning', 'TensorFlow'],
+      social: {
+        linkedin: '#',
+        twitter: '#',
+        email: 'saanjalibelgavi@gmail.com'
+      },
+      portfolio: 'https://kartikbvb-resume.vercel.app'
     },
     {
       name: 'Rohit Shivsharan Subhedar',
